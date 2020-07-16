@@ -1,0 +1,30 @@
+.slogan__container {
+  height: 85vh;
+
+  background: white;
+  margin: 0;
+  display: grid;
+  grid-template-rows: [sloganBody] 50% [sloganPicBody] 50% [end];
+  grid-template-columns: [sloganLMarg] 1fr [sloganM] 3fr [sloganRMargin] 1fr [end];
+}
+.slogan__slogan {
+  grid-row: sloganBody;
+  grid-column: sloganM;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  h1 {
+    font-size: 40px;
+    margin: 0 0 4rem 0;
+    font-weight: 300;
+  }
+}
+
+.slogan__pic {
+  grid-row: sloganPicBody;
+  grid-column: sloganLMarg/end;
+  background: url("/images/Bali.jpg");
+  background-size: cover;
+  background-position: 0 -25rem;
+}

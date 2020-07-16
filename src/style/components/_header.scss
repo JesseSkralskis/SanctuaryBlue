@@ -1,0 +1,29 @@
+.header__container {
+  height: 15vh;
+  background: white;
+  display: grid;
+  margin: 0;
+  grid-template-rows: [headerBody] auto;
+  grid-template-columns: [headerLeft] 1fr [headerRight] 1fr;
+  h3 {
+    font-weight: 300;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__santuary {
+  padding-left: 5rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8rem;
+  align-items: center;
+}
+.header_about {
+  padding-right: 5rem;
+}
